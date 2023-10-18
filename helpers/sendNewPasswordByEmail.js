@@ -1,12 +1,12 @@
 const nodemailer = require('nodemailer');
-const { META_PASSWORD } = process.env;
+const { META_PASSWORD, META_USER, META_HOST } = process.env;
 
 const nodeMailerConfig = {
-  host: 'smtp.meta.ua',
+  host: META_HOST,
   port: 465,
   secure: true,
   auth: {
-    user: 'nadiiatsytsylina@meta.ua',
+    user: META_USER,
     pass: META_PASSWORD,
   },
 };
@@ -16,7 +16,7 @@ const transport = nodemailer.createTransport(nodeMailerConfig);
 const sendNewPasswordByEmail = async (email, newPassword) => {
   try {
     const mailOptions = {
-      from: 'nadiiatsytsylina@meta.ua',
+      from: META_USER,
       to: email,
       subject: 'Password Reset',
       text: `Your new password is: ${newPassword}`,
