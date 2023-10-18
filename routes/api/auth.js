@@ -13,4 +13,6 @@ router.get('/current', authenticate, ctrl.getCurrent);
 
 router.post('/logout', authenticate, ctrl.logout);
 
+router.post('/forgot-password', ctrl.resetPassword);
+
 module.exports = router;

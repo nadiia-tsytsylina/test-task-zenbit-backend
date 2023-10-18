@@ -5,7 +5,7 @@ This is a backend part for React application [Test task Zenbit](https://github.c
 The application contains 3 pages:
 
 - Home page - the page with general information about the company and its advantages;
-- Login page - the page where user can authorize;
+- Login page - the page where user can authorize and reset password;
 - Register page - the page where the user can register.
 
 ## Technology stack
@@ -18,6 +18,7 @@ The application contains 3 pages:
 - Multer
 - Cors
 - Json Web Token
+- NodeMailer
 
 ## Getting Started
 
