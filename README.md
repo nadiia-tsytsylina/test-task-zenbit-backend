@@ -1,6 +1,6 @@
 # Test task Zenbit Backend
 
-This is a backend part for React application [Test task Zenbit](https://github.com/nadiia-tsytsylina/test-task-zenbit).
+This is a backend part for React application [Test task Zenbit](https://github.com/nadiia-tsytsylina/test-task-zb).
 
 The application contains 3 pages:
 
